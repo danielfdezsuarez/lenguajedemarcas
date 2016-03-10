@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jquery-1.11.3.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery1.css">
+  </head>
+  <body>
+      
+      <h1>HORARIO</h1>
+      
+      <table style="width:100%" id="table1">
+          <tr>
+            <td>Lunes</td>
+            <td>Martes</td> 
+            <td>Miercoles</td>
+            <td>Jueves</td> 
+            <td>Viernes</td>
+          </tr>
+          <tr>
+            <td>GDB</td>
+            <td>L.Marcas</td> 
+            <td>ISO</td>
+            <td>L.Marcas</td>
+            <td>ISO</td> 
+          </tr>
+          <tr>
+            <td>GDB</td>
+            <td>L.Marcas</td> 
+            <td>ISO</td>
+            <td>L.Marcas</td>
+            <td>ISO</td> 
+          </tr>
+          <tr>
+            <td>GDB</td>
+            <td>FOL</td> 
+            <td>ISO</td>
+            <td>FOL</td>
+            <td>F.Hardware</td> 
+          </tr>
+          <tr>
+            <td>Redes</td>
+            <td>ISO</td> 
+            <td>GDB</td>
+            <td>Redes</td>
+            <td>F.Hardware</td> 
+          </tr>
+          <tr>
+            <td>Redes</td>
+            <td>ISO</td> 
+            <td>GDB</td>
+            <td>Redes</td>
+            <td>F.Hardware</td> 
+          </tr>
+          <tr>
+            <td>Redes</td>
+            <td>ISO</td> 
+            <td>GDB</td>
+            <td>Redes</td>
+            <td>FOL</td> 
+          </tr>
+      </table>
+      
+      <table style="width:30%" id="table2">
+          <tr>
+            <td>Daniel</td>
+          </tr>
+          <tr>
+            <td>Felipe</td>
+          </tr>
+          <tr>
+            <td>Francisco</td>
+          </tr>
+          <tr>
+            <td>Carlos</td>
+          </tr>
+          <tr>
+            <td>Ana</td>
+          </tr>
+          <tr>
+            <td>Alejandro</td>
+          </tr>
+          <tr>
+            <td>Imanol</td>
+          </tr>
+          <tr>
+            <td>Manuel</td>
+          </tr>
+          <tr>
+            <td>Jorge</td>
+          </tr>
+          <tr>
+            <td>Raul</td>
+          </tr>
+        </table>
+      
+      <p id="p1">Este párrafo desaparece</p>
+      <p id="p2">Este párrafo aparece</p>
+      <p id="p3">Este párrafo desaparece</p>
+      <p id="p4">Y este también</p>
+      
+      <script type="text/javascript">
+        //This part is executed only when all the document is loaded
+        $(function() {
+            console.log("Ready for jQuery");
+        
+        $("h1").addClass("clase1");
+        $("#table1 tr:first").css({"background-color":"red", "color":"white"});
+        $("#table2 tr:odd").addClass("clase2");
+        $("#table2 tr:even").addClass("clase3");
+        $("p").hide(5000);
+        $("#p2").show(5000);
+        $("#p4").show(5000);
+                    
+        });
+      </script>
+  </body>
+</html>

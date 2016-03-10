@@ -1,0 +1,39 @@
+div{
+    margin: 0px auto;
+    border: 1px black solid;
+}
+
+#slider1{
+    width: 400px;
+    height: 400px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+#imagen, #imagen2{
+    width: 100px;
+    height: 100px;
+}
+
+#slider2, #slider4, #slider6, #slider7, #slider8{
+    width: 300px;
+    height: 100px;
+}
+
+#slider3{
+    width: 400px;
+    height: 400px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+#slider5{
+    width: 400px;
+    height: 600px;
+    text-align: center;
+}
+
+#colorear{
+    width: 200px;
+    height: 200px;
+}

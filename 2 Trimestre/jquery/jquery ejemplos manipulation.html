@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jquery-1.11.3.js"></script>
+    <link rel="stylesheet" type="text/css" href=" ">
+  </head>
+  <body>
+      
+      <p id="p1">parrafo1</p>
+      <ul>
+          <li>elem1</li><li>elem2</li>
+      </ul>
+      <script type="text/javascript">
+        //This part is executed only when all the document is loaded
+        $(function() {
+            console.log("Ready for jQuery");
+            
+            console.log($("#p1").text());
+            $("#p1").text("cambio el parrafo");
+            
+            <!-- append: meter al final (cortar+pegar) -->
+            $("ul").append("<li>elme3</li>");
+            
+            <!-- prepend: meter al final -->
+            $("ul").prepend("<li>elme0</li>");
+            
+            <!-- vaciar pero sin borrar -->
+            $("ul").empty();
+            
+            <!-- vaciar borrando el elelemento del html -->
+            $("ul").remove();
+            
+            <!-- clonar y donde (copiar+pegar)-->
+            <!-- append to -->
+            $("#p1").clone().appendTo("#p2");
+            
+            <!-- html sustituye lo que va dentro de la etiqueta, practicamente igual que text -->
+            $("#p1").html("<h1>TEXTO</h1>"));
+            
+            <!-- replace, aquí si que reemplaza las eqtiquetas -->
+            $().replace
+            
+            
+            
+            
+            
+        });
+      </script>
+  </body>
+</html>

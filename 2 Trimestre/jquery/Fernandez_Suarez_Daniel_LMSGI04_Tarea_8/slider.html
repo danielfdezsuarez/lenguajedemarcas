@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jquery-1.11.3.js"></script>
+    <link rel="stylesheet" type="text/css" href="slider.css">
+</head>
+
+<body>
+    <div id="slider1">
+
+    <h3>Slider tamaño imagen</h3>
+
+    <img id="imagen" src="imagen2.jpg"><br>
+    
+    <input type="range" id="slider2" value="0" min="0" max="100">
+        
+    </div>
+    
+    <br>
+    
+    <div id="slider3">
+
+    <h3>Slider rotar imagen</h3>
+
+    <img id="imagen2" src="imagen2.jpg"><br>
+    
+    <input type="range" id="slider4" value="0" min="0" max="10800">
+        
+    </div>
+    
+    <div id="slider5">
+
+    <h3>Slider colores</h3>
+
+    <div id="colorear"></div><br>
+    
+    R<input type="range" id="slider6" value="0" min="0" max="256"><br>
+    
+    G<input type="range" id="slider7" value="0" min="0" max="256"><br>
+    
+    B<input type="range" id="slider8" value="0" min="0" max="256"><br>
+        
+    </div>
+
+    <script type="text/javascript">
+        //This part is executed only when all the document is loaded
+        $(function () {
+            console.log("Ready for jQuery");
+
+        $("#slider2").change(function(){
+            var valor = parseInt($(this).val());
+            console.log(valor);
+            $("#imagen").animate({"width":valor+100, "height":valor+100})
+        });
+        
+        $("#slider4").on("input",function(){
+            var valor2 = parseInt($(this).val());
+            console.log(valor2);
+            $("#imagen2").css({"transform": "rotate("+valor2+"deg)"})
+        });
+        
+        });
+    </script>
+</body>
+
+</html>

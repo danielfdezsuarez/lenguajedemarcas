@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="jquery-1.11.3.js"></script>
+        <link rel="stylesheet" type="text/css" href="galeria.css">
+    </head>
+    <body>
+        <div id="container">
+            <h1>GALERÍA</h1>
+            <div id="centro">
+                <img id="imagen" src="imagen1.jpg">
+                <div id="atras"><img src="flecha1.jpg"></div>
+                <div id="adelante"><img src="flecha2.jpg"></div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+        //This part is executed only when all the document is loaded
+            $(function() {
+                console.log("Ready for jQuery");
+                nf = 0;
+                vf=["imagen1.jpg", "imagen2.jpg", "imagen3.jpg", "imagen4.jpg", "imagen5.jpg"];
+                $("#atras").hide();
+
+            $("#adelante").click(function(){
+                nf=nf+1;
+                $("#imagen").attr("src",vf[nf]);
+                if(nf==4){
+                    $("#adelante").hide()
+                }
+                else{
+                    $("#adelante").show()
+                }
+                if(nf==0){
+                    $("#atras").hide()
+                }
+                else{
+                    $("#atras").show()
+                }
+            });
+            
+            $("#atras").click(function(){
+                nf=nf-1;
+                $("#imagen").attr("src",vf[nf]);
+                if(nf==0){
+                    $("#atras").hide()
+                }
+                else{
+                    $("#atras").show()
+                }
+                if(nf==4){
+                    $("#adelante").hide()
+                }
+                else{
+                    $("#adelante").show()
+                }
+            });
+            
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jquery-1.11.3.js"></script>
+    <link rel="stylesheet" type="text/css" href=" ">
+  </head>
+  <body>
+      <p id="myfirstp">
+        Hello dude!!!
+      </p>
+      <p>
+        Hello again
+      </p>
+      
+      <script type="text/javascript">
+        //This part is executed only when all the document is loaded
+        $(function() {
+            console.log("Ready for jQuery");
+            
+            $("p").css("background-color","red");
+            $("p#myfirstp").css({"background-color":"blue","color":"white"});
+            
+            
+        });
+      </script>
+  </body>
+</html>
+
+
+

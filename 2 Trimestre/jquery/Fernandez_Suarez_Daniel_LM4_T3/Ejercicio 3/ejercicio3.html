@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="jquery-1.11.3.js"></script>
+        <link rel="stylesheet" type="text/css" href="ejercicio3.css">
+    </head>
+    <body>
+        <ul id="menu1">
+            <li id="submenu1">Inglaterra
+                <ul id="subsubmenu1">
+                    <li>Liverpool</li>
+                    <li>Londres</li>
+                    <li>Manchester</li>
+                    <li id="subsubmenu4">Shrewsbury
+                        <ul id="menu0">
+                            <li>Visitar</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li id="submenu2">España
+                <ul>
+                    <li>2.1</li>
+                    <li>2.2</li>
+                    <li>2.3</li>
+                    <li>2.4</li>
+                </ul>
+            </li>
+            <li id="submenu3">Italia
+                <ul>
+                    <li>3.1</li>
+                    <li>3.2</li>
+                    <li>3.3</li>
+                    <li>3.4</li>
+                </ul>
+            </li>
+            <li id="submenu4">Alemania
+                <ul>
+                    <li>4.1</li>
+                    <li>4.2</li>
+                    <li>4.3</li>
+                    <li>4.4</li>
+                </ul>
+            </li>
+        </ul>
+
+        <script type="text/javascript">
+        //This part is executed only when all the document is loaded
+            $(function() {
+                console.log("Ready for jQuery");
+            
+            $("#submenu1").children().hide();
+            $("#submenu2").children().hide();
+            $("#submenu3").children().hide();
+            $("#submenu4").children().hide();
+            $("#subsubmenu4").children().hide();
+                
+            $("#submenu1").mouseenter(function(event) {
+                $(this).children().show();
+            });
+            
+            $("#subsubmenu4").mouseenter(function(event) {
+                $(this).children().show();
+            });
+            
+            $("#subsubmenu4").mouseleave(function(event) {
+                $(this).children().hide();                
+            });
+                
+            $("#submenu1").mouseleave(function(event) {
+                $(this).children().hide();                
+            });
+            
+                
+                            
+            });
+        </script>
+    </body>
+</html>

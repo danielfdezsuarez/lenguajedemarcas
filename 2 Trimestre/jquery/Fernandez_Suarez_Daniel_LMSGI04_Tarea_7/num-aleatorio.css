@@ -1,0 +1,29 @@
+div{
+    margin: 0px auto;    
+    border: 1px solid black;
+}
+
+#arriba{
+    width: 700px;
+    height: 102px;
+    background-color: aquamarine;
+}
+
+#a1, #a2, #a3{
+    width: 200px;
+    height: 100px;
+    background-color: darkseagreen;
+    float: left;
+}
+
+#centro{
+    clear: left;
+    width: 700px;
+    height: 200px;
+    background-color: dimgrey;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="jquery-1.11.3.js"></script>
+        <link rel="stylesheet" type="text/css" href="ejercicio.css">
+    </head>
+    <body>
+        <div id="arriba">
+            <div id="controles">CONTROLES GENERALES</div>
+            <div id="botones">
+                <div><button type="button" id="oc_mo_general">OCULTAR/MOSTRAR</button><button type="reset" class="boton" id="reset">RESETEAR</button></div>
+            </div>
+        </div>
+        <br>
+        <div id="grande">
+            <div class="tira">
+                <div class="izq">
+                    <button type="button" class="boton" id="oc_mo_barra1">OCULTAR/MOSTRAR</button>
+                    <button type="button" class="boton" id="m50_1">+50</button>
+                    <button type="button" class="boton" id="50m_1">-50</button>
+                </div>
+                <div class="barra" id="barra1"></div>
+            </div>
+            <div class="tira">
+                <div class="izq">
+                    <button type="button" class="boton" id="oc_mo_barra2">OCULTAR/MOSTRAR</button>
+                    <button type="button" class="boton" id="m50_2">+50</button>
+                    <button type="button" class="boton" id="50m_2">-50</button>
+                </div>
+                <div class="barra" id="barra2"></div>
+            </div>
+            <div class="tira">
+                <div class="izq">
+                    <button type="button" class="boton oc_mo" id="oc_mo_barra3">OCULTAR/MOSTRAR</button>
+                    <button type="button" class="boton" id="m50_3">+50</button>
+                    <button type="button" class="boton" id="50m_3">-50</button>
+                </div>
+                <div class="barra" id="barra3"></div>
+            </div>
+        </div>
+        
+
+        <script type="text/javascript">
+        //This part is executed only when all the document is loaded
+            $(function() {
+                console.log("Ready for jQuery");
+                
+            $("#oc_mo_general").click(function(event) {
+                $(".barra").toggle();
+            });
+                
+            $("#oc_mo_barra1").click(function(event) {
+                $("#barra1").toggle();
+            });
+                
+            $("#oc_mo_barra2").click(function(event) {
+                $("#barra2").toggle();
+            });
+                
+            $("#oc_mo_barra3").click(function(event) {
+                $("#barra3").toggle();
+            });
+                        
+            $("#m50_1").click(function(event) {
+                $("#barra1").animate({width: "+=50px"}, {duration:1000});
+            });
+                
+            $("#50m_1").click(function(event) {
+                $("#barra1").animate({width: "-=50px"}, {duration:1000});
+            });    
+            
+            $("#m50_2").click(function(event) {
+                $("#barra2").animate({width: "+=50px"}, {duration:1000});
+            });
+                
+            $("#50m_2").click(function(event) {
+                $("#barra2").animate({width: "-=50px"}, {duration:1000});
+            });
+            
+            $("#m50_3").click(function(event) {
+                $("#barra3").animate({width: "+=50px"}, {duration:300});
+            });
+                
+            $("#50m_3").click(function(event) {
+                $("#barra3").animate({width: "-=50px"}, {duration:1000});
+            });
+                
+            $("#reset").click(function(event) {
+                $("#barra1").width(400).show();
+                $("#barra2").width(400).show();
+                $("#barra3").width(400).show();
+            });
+           
+            });
+        </script>
+    </body>
+</html>

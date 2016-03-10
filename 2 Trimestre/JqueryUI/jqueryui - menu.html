@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="jquery-ui.min.css">
+        <script src="external/jquery/jquery.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="jquery-ui.css">
+        <style>
+  .ui-menu { width: 150px; }
+  </style>
+    </head>
+    <body>
+        
+        <ul id="menu">
+  <li class="ui-state-disabled">Aberdeen</li>
+  <li>Ada</li>
+  <li>Adamsville</li>
+  <li>Addyston</li>
+  <li>Delphi
+    <ul>
+      <li class="ui-state-disabled">Ada</li>
+      <li>Saarland</li>
+      <li>Salzburg an der schönen Donau</li>
+    </ul>
+  </li>
+  <li>Saarland</li>
+  <li>Salzburg
+    <ul>
+      <li>Delphi
+        <ul>
+          <li>Ada</li>
+          <li>Saarland</li>
+          <li>Salzburg</li>
+        </ul>
+      </li>
+      <li>Delphi
+        <ul>
+          <li>Ada</li>
+          <li>Saarland</li>
+          <li>Salzburg</li>
+        </ul>
+      </li>
+      <li>Perch</li>
+    </ul>
+  </li>
+  <li class="ui-state-disabled">Amesville</li>
+</ul>
+        
+        <script type="text/javascript">
+        //This part is executed only when all the document is loaded
+           $(function() {
+    $( "#menu" ).menu();
+  });
+            
+     
+        </script>
+    </body>
+</html>

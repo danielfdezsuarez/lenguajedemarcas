@@ -1,0 +1,6 @@
+#primero{color:darkblue; font-family:sans-serif;}
+#primero em{font-style:normal; background-color:lightyellow;}
+p{margin-right:80px; font-family:sans-serif;}
+p em.especial{font-style:normal; background-color:peachpuff; border: 1px solid #FF9900}
+p span {font-weight:bold}
+a:link  {color:red}

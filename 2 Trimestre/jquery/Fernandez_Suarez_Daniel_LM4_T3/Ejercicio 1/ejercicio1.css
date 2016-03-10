@@ -1,0 +1,45 @@
+#grande{
+    width:200px;
+    height:500px;
+    background-color: lightblue;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+#flecha1{
+    width: 30px;
+    height: 30px;
+}
+
+#flecha2{
+    width: 30px;
+    height: 30px;
+}
+
+#imagen{
+    width: 150px;
+    height: 150px;
+}
+
+#boton{
+    text-align: right;
+    padding: 10px 10px 0px 0px;
+}
+
+div{
+    text-align: center;
+}
+
+#lista{
+    text-align: left;
+}
+
+ul{
+    list-style: none;
+    font-family: cursive;
+    margin-left: -10px;
+}
+
+li{
+    padding: 5px;
+}

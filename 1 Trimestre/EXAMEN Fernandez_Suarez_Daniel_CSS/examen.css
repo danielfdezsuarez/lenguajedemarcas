@@ -1,0 +1,173 @@
+div {
+    font-family: sans-serif;
+}
+
+span{
+    color:green;
+}
+
+#contenedor{
+    overflow-y: auto;
+    width: 900px;
+    margin:0px auto;
+}
+
+#cabecera div{
+    border:1px solid black;
+}
+
+#cabecera{
+    display: inline;
+}
+
+#cabecera1-1{
+    width: 200px;
+    
+}
+
+#cabecera1-1 h1{
+    
+}
+
+#cabecera1-2{
+    width:200px;
+    
+}
+
+#cabecera2{
+    width: 200px;
+    
+}
+
+#cabecera2 li{
+    
+}
+
+#menu1{
+    overflow-y: auto;
+    background-color: black;
+    margin-top: 20px;
+}
+
+#menu1 li{
+    display:inline;
+    float:left;
+    color: white;
+    height: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 45px;
+    border: none;
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#menu1 ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+#especial{
+    background-color: lawngreen;
+}
+
+#menu-buscador{
+    display:inline;
+    float:left;
+    margin-top: 23px;
+    margin-left: 130px;
+}
+
+#buscador{
+    background-color: black;
+    border: none;
+}
+
+#cuerpo{
+    background-image: url(HPIM3424.JPG);
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 900px;
+    margin-top: 20px;
+}
+
+#fondo{
+    width: 900px;
+}
+
+#cuadro1{
+    background-color: grey;
+    width: 400px;
+    display: inline;
+    float: left;
+    padding: 5px;
+    font-size: 15px;
+}
+
+#cuadro2{
+    witdh:100px;
+    display: inline;
+}
+
+#cuadro3{
+    width: 50px;
+    display: inline;
+    background-color: grey;
+    color: white;
+}
+
+#cuadro4{
+    witdh:100px;
+    display: inline;
+}
+
+#cuadro5{
+    width: 50px;
+    display: inline;
+    background-color: grey;
+    color: white;
+}
+
+#menu2{
+    width: 900px;
+    margin-top: 100px;
+}
+
+#freshcaja{
+    width: 290px;
+    float: left;
+    
+}
+
+#freshimg{
+    clear: left;
+    display: inline
+}
+
+#freshtexto, #easytexto, #fullytexto{
+    font-size: 13px;
+}
+
+#easycaja{
+    float: left;
+    width: 290px;
+}
+
+#fullycaja{
+    width: 290px;
+    float: left;
+}
+
+#bottom{
+    clear:left;
+    margin-top: 300px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid black;
+}
+
+@media screen #menu1{
+{background-color: red;
+}

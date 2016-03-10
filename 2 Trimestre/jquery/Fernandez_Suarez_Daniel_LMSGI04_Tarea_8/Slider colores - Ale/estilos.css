@@ -1,0 +1,40 @@
+#imagen{
+    width: 500px;
+    height: 500px;
+}
+
+#divimagen{
+    margin: 0px auto;
+    width: 500px;
+    height: 500px;
+}
+
+#inputtamano{
+    margin-top: 100px;
+    margin-right: 100px;
+    float: left;
+    height: 100px;
+    width: 200px;
+}
+
+#inputorientacion{
+    margin-top: 100px;
+    float:left;
+    height: 100px;
+    width: 200px;
+}
+
+#colores{
+    margin-top: 200px;
+    border: 1px solid blue;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    width: 200px;
+    height: 200px;
+        background-color: rgb(0,0,0);
+}
+
+#barrascolor{
+
+}

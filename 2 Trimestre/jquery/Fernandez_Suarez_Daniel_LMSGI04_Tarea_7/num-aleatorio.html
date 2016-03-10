@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jquery-1.11.3.js"></script>
+    <link rel="stylesheet" type="text/css" href="num-aleatorio.css">
+</head>
+
+<body>
+    <div id="arriba">
+        <div id="a1">
+            <p id="intentos">Nº intentos:0</p>
+        </div>
+        <div id="a2">
+            <p>Numero</p>
+            <input type="text" name="numero" id="numero">
+        </div>
+        <div id="a3">
+            <button type="button">Comparar
+        </div>
+    </div>
+
+    <div id="centro"></div>
+
+    <script type="text/javascript">
+        //This part is executed only when all the document is loaded
+        $(function () {
+            console.log("Ready for jQuery");
+
+            var numero = Math.floor((Math.random() * 100) + 1);
+
+            var intentos = 0;
+
+            console.log(numero);
+
+            $("#a3").click(function (event) {
+
+                intentos = intentos + 1;
+
+                $("#intentos").html("Nº de intentos:" + intentos);
+
+                var numero2 = parseInt($("#numero").val());
+
+                if (numero2 < numero) {
+                    $("#centro").append("<p>es mayor<p>");
+                } else if (numero2 > numero) {
+                    $("#centro").append("<p>es menor<p>");
+                } else if (numero2 == numero) {
+                    $("#centro").append("<p>es correcto<p>");
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>

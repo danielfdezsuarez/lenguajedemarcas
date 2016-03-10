@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="jquery-1.11.3.js"></script>
+        <link rel="stylesheet" type="text/css" href="acordeon.css">
+    </head>
+    <body>
+        <ul id="acordeon">
+            <li id="features">
+                <p class="vertical"><strong>features</strong></p>
+                    <div class="submenu">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.
+                    </div>
+                    <br>
+                    <div class="submenu">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.
+                    </div>
+                    <br>
+                    <div class="submenu">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.
+                    </div>
+                    <br>
+                    <div class="submenu">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.
+                    </div>
+                    <br>
+                    <div class="submenu">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.
+                    </div>
+            </li>
+            <li id="design">
+                <p class="vertical"><strong>design</strong></p>
+                    <div class="submenu">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.<br>
+                    </div>
+                    <div class="submenu2"><img src="imagen1.jpg"><img id="imagen2" src="imagen2.jpg">
+                    </div>
+            </li>
+            <li id="app_store">
+                <p class="vertical"><strong>app store</strong></p>
+                    <div><a href="http://www.apple.com/es/"><img id="imagen5" src="imagen5.jpg"></a></div>
+                    <div class="submenu">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.
+                    </div>
+            </li>
+            <li id="gallery">
+                <p class="vertical"><strong>gallery</strong></p>
+                    <div class="submenu">
+                        <div id="galeria">
+                            <a href="http://www.apple.com/es/"><img src="imagen1.jpg"></a>
+                            <a href="http://www.apple.com/es/"><img id="imagen2" src="imagen2.jpg"></a>
+                            <a href="http://www.apple.com/es/"><img src="imagen3.jpg"></a>
+                            <a href="http://www.apple.com/es/"><img id="imagen4" src="imagen4.jpg"></a>
+                        </div>
+                    </div>
+            </li>
+            <li id="tech_spec">
+                <p class="vertical"><strong>tech spec</strong></p>
+                    <div class="submenu2"><img src="imagen3.jpg"><img id="imagen4" src="imagen4.jpg">
+                    </div>
+                    <div class="submenu">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.
+                    </div>
+                    <div class="submenu">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.
+                    </div>
+            </li>
+        </ul>
+
+        <script type="text/javascript">
+        //This part is executed only when all the document is loaded
+            $(function() {
+                console.log("Ready for jQuery");
+            
+            activeItem=$("#acordeon li:first");
+            
+            $("#acordeon li").hover(function(){
+                $(activeItem).animate({width: "50px"}, {duration:300, queue:false});
+                $(this).animate({width: "600px"}, {duration:300, queue:false});
+                activeItem = this;
+            });
+                
+            });
+        </script>
+    </body>
+</html>

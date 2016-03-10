@@ -1,0 +1,74 @@
+body{
+    width: 1000px;
+    margin: 0px auto;
+}
+
+#grande .boton{
+    width: 150px;
+    margin: 5px;
+    margin-top: 7px;
+}
+
+#reset{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+#arriba{
+    margin-left: 700px;
+}
+
+#controles{
+    margin-top: 10px;
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+#botones{
+    text-align: left;
+}
+
+#grande{
+    overflow-y: auto;
+}
+
+.tira{
+    width: 950px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.izq{
+    width: 150px;
+    height: 100px;
+    float: left;
+    display: inline;
+    padding-right: 30px;
+    border-right: 1px solid black;
+    margin-top: 0px;
+}
+
+.barra{
+    width: 400px;
+    height: 100px;
+    float: left;
+    margin-left: 10px;
+}
+
+#barra1{
+    background-color: red;
+}
+
+#barra2{
+    background-color: blue;
+}
+
+#barra3{
+    background-color: green;
+}
+
+.boton{
+    
+}

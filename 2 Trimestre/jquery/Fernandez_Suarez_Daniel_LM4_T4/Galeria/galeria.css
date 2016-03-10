@@ -1,0 +1,55 @@
+#container{
+    width: 800px;
+    height: 500px;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+#centro{
+    position: relative;   
+}
+
+#imagen {
+    width: 800px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+h1{
+    margin: 0 auto;
+    font-family: Courier New;
+}
+
+#atras{
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    top: 225px;
+    position: absolute;
+    opacity: 0.5;
+    border-radius: 5px;
+    background-color: floralwhite;
+}
+
+#adelante{
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    top: 225px;
+    position: absolute;
+    opacity: 0.5;
+    border-radius: 5px;
+    background-color: floralwhite;
+}
+
+#atras img {
+    width: 50px;
+    height: 50px;
+}
+
+#adelante img {
+    width: 50px;
+    height: 50px;
+}

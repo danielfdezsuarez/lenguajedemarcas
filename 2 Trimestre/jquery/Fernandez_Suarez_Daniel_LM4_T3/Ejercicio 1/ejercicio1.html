@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="jquery-1.11.3.js"></script>
+        <link rel="stylesheet" type="text/css" href="ejercicio1.css">
+    </head>
+    <body>
+      
+        <div id="grande">
+            <div id="boton">
+                <img id="flecha1" src="flecha1.jpg">
+                <img id="flecha2" src="flecha2.jpg">
+            </div>
+            <div><img id="imagen" src="imagen.png"></div>
+            <div id="lista">
+                <ul>
+                    <li>Bismack Biyombo</li>
+                    <li>Jonas Valanciunas</li>
+                    <li>Anthony Bennett</li>
+                    <li>DeMar DeRozan</li>
+                    <li>Kyle Lowry</li>
+                </ul>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+        //This part is executed only when all the document is loaded
+            $(function() {
+                console.log("Ready for jQuery");
+            
+            $("#flecha2").hide();
+            
+            $("#flecha1").click(function(event) {
+            $(this).parent().nextAll().hide();
+                $("#grande").animate({"width":"50px"}, 1000);
+                $(this).hide();
+                $("#flecha2").show();               
+                
+            });
+            
+            $("#flecha2").click(function(event) {
+                $(this).parent().nextAll().show();
+                $("#grande").animate({"width":"200px"}, 1000);
+                $(this).hide();
+                $("#flecha1").show();
+            });
+                
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,131 @@
+body{
+    width: 893px;
+}
+
+#acordeon {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    overflow-y: auto;
+    background-color: #3B3F40;
+    border: 1px dashed white;
+    border-radius: 10px;
+}
+ 
+#acordeon li {
+    float: left;
+    display: block;
+    height: 370px;
+    width: 50px;
+    padding: 15px 0;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5em;
+    border: 1px dashed white;
+    border-radius: 10px;
+}
+ 
+.vertical{
+    vertical-align: baseline;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: white;
+    float: left;
+    clear: left;
+    display: inline;
+    height: 370px;
+    border-radius: 5px;
+    margin-left: 13px;
+}
+
+#features{
+    background-color: #BD5151;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+#design{
+    background-color: #C38E4A;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#app_store{
+    background-color: #95BA5D;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#gallery{
+    background-color: #5AAAB5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#tech_spec{
+    background-color: #B35891;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+strong {
+    padding-top: 290px;
+    font-family: sans-serif;
+}
+
+.submenu{
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 10px;
+    border: 1px dashed grey;
+    border-radius: 5px;
+    overflow-y: auto;
+    padding: 3px;
+}
+
+.submenu2{
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-top: 50px;
+    border: 1px dashed grey;
+    border-radius: 5px;
+    overflow-y: auto;
+    padding: 3px;
+}
+
+img{
+    width: 225px;
+    height: 175px;
+}
+
+#imagen2, #imagen4{
+    padding-left: 70px;
+}
+
+#tech_spec div{
+    margin-top: 20px;
+}
+
+#imagen5{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    width: 100px;
+    height: 100px;
+    border: 1px dashed white;
+    border-radius: 50px;
+    background-color: #1BAFF5;
+}

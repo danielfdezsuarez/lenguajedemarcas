@@ -1,0 +1,14 @@
+$("p").hide();
+$("p#myfirstp").show();
+
+$("p").hide();
+$("p#myfirstp").fadeIn(5000);
+$("p#myfirstp").fadeOut(5000);
+
+$("p").hide();
+$("p#myfirstp").fadeIn(5000);
+$("p#myfirstp").fadeTo("slow",0.5);
+
+$("p").hide();
+$("p#myfirstp").slideDown(5000);
+$("p#myfirstp").slideUp(3000);

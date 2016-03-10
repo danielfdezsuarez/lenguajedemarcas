@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jquery-1.11.3.js"></script>
+    <link rel="stylesheet" type="text/css" href=" ">
+  </head>
+  <body>
+      
+      <div id="crece"></div>
+      <script type="text/javascript">
+        //This part is executed only when all the document is loaded
+        $(function() {
+            console.log("Ready for jQuery");
+        $("#crece").css({"width":"100px", "height":"100px", "background-color":"red"});
+            
+        $("#crece").animate({"width":"400px", "height":"400px", "background-color":"red"},10000)
+        
+        //$("#crece").animate({"left":"600px").10000)})
+        
+        });
+      </script>
+  </body>
+</html>

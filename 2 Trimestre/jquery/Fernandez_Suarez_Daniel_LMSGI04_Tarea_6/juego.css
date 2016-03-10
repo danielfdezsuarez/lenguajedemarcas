@@ -1,0 +1,20 @@
+#grande{
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border: 1px solid black
+}
+
+#centro{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,31 @@
+.clase1{
+    background-color: black;
+    color: white;
+}
+
+table{
+    text-align: center;
+    border: solid 1px;
+}
+
+td{
+    border: solid 1px;
+}
+
+#table1{ 
+    margin-bottom: 25px;
+}
+
+.clase2{
+    background-color: grey;
+    color:black;
+}
+
+.clase3{
+    background-color: green;
+    color:white;
+}
+
+h1{
+    padding-left: 10px;
+}

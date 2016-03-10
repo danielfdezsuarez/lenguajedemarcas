@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jquery-1.11.3.js"></script>
+    <link rel="stylesheet" type="text/css" href=" ">
+  </head>
+  <style>
+      div{background-color: blue; width: 200px; height: 200px;}
+  </style>
+  <body>
+        
+      <div id="ejemplo"><p>HOLA</p></div>
+      
+      <script type="text/javascript">
+        //This part is executed only when all the document is loaded
+        $(function() {
+            console.log("Ready for jQuery");
+        
+        <!-- opcion1 -->
+        $("#ejemplo").click(function(event) {
+            $(this).css("background-color", "red");
+            $(this).width(100);
+            $(this).height(100);
+            
+        });
+            
+        <!-- opcion2 -->
+        $("#ejemplo").on("click", function(event) {
+            $(this).css("background-color", "red");
+            $(this).width(100);
+            $(this).height(100);
+            
+        });
+            
+        <!-- event raton encima - opcion2 -->
+        $("#ejemplo").mouseover("click", function(event) {
+            $(this).css("background-color", "red");
+            $(this).width(100);
+            $(this).height(100);
+            
+        });
+            
+            
+        });
+      </script>
+  </body>
+</html>

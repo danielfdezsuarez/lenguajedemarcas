@@ -1,0 +1,3 @@
+Ordenes consola:
+$("img#imagen1").attr("src","http://img.fifa.com/mm/photo/affederation/administration/02/31/93/65/2319365_full-lnd.jpg");
+$("a#enlace").attr("href","http://www.marca.com");

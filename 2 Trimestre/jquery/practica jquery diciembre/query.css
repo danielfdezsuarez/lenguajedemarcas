@@ -1,0 +1,23 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+#caja1, #caja2, #caja3, #caja4 {
+    border: 1px solid black;
+    display:inline;
+    height:100px;
+    width:20%;
+    float:left;
+    padding: 10px;
+}
+
+#contenedor{
+    height: 500px;
+    width:70%;
+    border: 1px solid black;
+}
+
+@media screen and (max-width:500px) {
+    #caja1, #caja2, #caja3, #caja4 {
+        width:80%;display:block}
+    

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="jquery-1.11.3.js"></script>
+        <link rel="stylesheet" type="text/css" href="ejercicio2.css">
+    </head>
+    <body>
+        <input type="text" id="texto">
+        <table id="tabla">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>74</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>64</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>82</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>99</td>
+            </tr>
+        </table>
+        
+        <button type="button" id="añadir">Añadir</button>
+        <button type="button" id="borrar">Borrar</button>
+        <button type="button" id="rellenar">Rellenar</button>
+
+        <script type="text/javascript">
+        //This part is executed only when all the document is loaded
+            $(function() {
+                console.log("Ready for jQuery");
+            $("#añadir").click(function(event){
+                $("#tabla").append("<tr><td></td><td></td><td></td><td></td><td></td></tr>");
+            });
+                
+            $("#borrar").click(function(event){
+                $("tr:last").remove();
+            });
+            
+            $("#rellenar").click(function(event){
+                $("tr").children().html($("#texto").val())
+            });    
+                
+            });
+        </script>
+    </body>
+</html>
